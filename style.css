@@ -1,134 +1,103 @@
-<link rel="stylesheet" href="style.css">
-Background: #0a0a0a
-Card: #111111
-Text: #ffffff
-Secondary: #b3b3b3
-Accent: #ff6b00
-Border: #222222
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-  background:#0a0a0a;
-  color:white;
-  font-family:Arial,sans-serif;
+background:#0a0a0a;
+color:#fff;
+font-family:'Inter',sans-serif;
 }
 
 nav{
-  padding:20px 40px;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:100;
+padding:20px 40px;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
 }
 
 .hero{
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
-
-.hero h1{
-  font-size:4rem;
-  max-width:900px;
-}
-
-.hero p{
-  margin-top:20px;
-  color:#aaa;
-}
-.hero::before{
- content:'';
- position:absolute;
- width:500px;
- height:500px;
- background:#3b82f6;
- filter:blur(200px);
- opacity:.3;
-} 
-
-button{
-  margin:15px;
-  padding:14px 28px;
-  border:none;
-  border-radius:8px;
-  cursor:pointer;
-}
-
-.features{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-  padding:80px;
-}
-
-.card{
-  background:#111;
-  padding:30px;
-  border-radius:16px;
-}
-
-footer{
-  text-align:center;
-  padding:40px;
-}
-<!-- hero-video.mp4 -->
-.hero{
-    position:relative;
-    width:100%;
-    height:100vh;
-    overflow:hidden;
+position:relative;
+width:100%;
+height:100vh;
+overflow:hidden;
 }
 
 .hero-video{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:1;
 }
 
 .overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.55);
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.55);
+z-index:2;
 }
 
 .hero-content{
-    position:relative;
-    z-index:2;
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
-    padding:20px;
+position:relative;
+z-index:3;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
 }
 
 .hero-content h1{
-    font-size:5rem;
-    max-width:900px;
+font-size:5rem;
+max-width:900px;
 }
 
 .hero-content p{
-    margin-top:20px;
-    font-size:1.2rem;
-    max-width:700px;
+margin-top:20px;
+max-width:700px;
+color:#ddd;
+font-size:1.2rem;
 }
 
 .buttons{
-    margin-top:30px;
+margin-top:30px;
 }
 
 .buttons button{
-    margin:10px;
-    padding:15px 30px;
-    border:none;
-    border-radius:12px;
-    cursor:pointer;
+margin:10px;
+padding:15px 30px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:80px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:20px;
+}
+
+footer{
+text-align:center;
+padding:40px;
 }
