@@ -39,6 +39,15 @@ nav{
   margin-top:20px;
   color:#aaa;
 }
+.hero::before{
+ content:'';
+ position:absolute;
+ width:500px;
+ height:500px;
+ background:#3b82f6;
+ filter:blur(200px);
+ opacity:.3;
+}
 
 button{
   margin:15px;
@@ -65,12 +74,4 @@ footer{
   text-align:center;
   padding:40px;
 }
-.hero::before{
- content:'';
- position:absolute;
- width:500px;
- height:500px;
- background:#3b82f6;
- filter:blur(200px);
- opacity:.3;
-}
+
